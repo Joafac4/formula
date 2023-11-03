@@ -1,0 +1,36 @@
+@startuml
+
+interface Termino{
+solve()
+}
+
+interface Operation implements Termino{
+solve(): Termino
+symbol(): String
+}
+
+
+class operateVis implements OperationVisitor{
+    operate(Operation)
+}
+
+
+
+class Variable implements Termino{
+string name
+}
+
+class Valor implements Termino{
+int value
+}
+
+
+class Suma implements Operation{}
+class Resta implements Operation{}
+class Multiplicacion implements Operation{}
+class Division implements Operation{}
+class Potencia implements Operation{}
+class Raiz implements Operation{}
+class Modulo implements Operation{}
+
+@enduml
