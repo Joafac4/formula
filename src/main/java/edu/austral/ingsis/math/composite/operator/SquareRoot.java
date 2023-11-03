@@ -1,6 +1,7 @@
-package edu.austral.ingsis.math.operator;
+package edu.austral.ingsis.math.composite.operator;
 
-import edu.austral.ingsis.math.Term;
+import edu.austral.ingsis.math.composite.Term;
+import edu.austral.ingsis.math.visitorPattern.visitor.TermVisitor;
 
 import java.util.List;
 import java.util.Map;
@@ -25,4 +26,10 @@ public class SquareRoot implements Operator{
     public List<String> listVariables() {
         return  term.listVariables();
     }
+
+    public Term getTerm() {
+        return term;
+    }
+
+
 }

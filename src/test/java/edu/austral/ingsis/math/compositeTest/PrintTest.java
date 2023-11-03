@@ -1,11 +1,11 @@
-package edu.austral.ingsis.math;
+package edu.austral.ingsis.math.compositeTest;
 
-import edu.austral.ingsis.math.operator.*;
+import edu.austral.ingsis.math.composite.Term;
+import edu.austral.ingsis.math.composite.Value;
+import edu.austral.ingsis.math.composite.Variable;
+import edu.austral.ingsis.math.composite.operator.*;
 import org.junit.Before;
 import org.junit.Test;
-
-import java.util.HashMap;
-import java.util.Map;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

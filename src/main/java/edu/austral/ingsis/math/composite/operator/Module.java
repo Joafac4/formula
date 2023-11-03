@@ -1,13 +1,13 @@
-package edu.austral.ingsis.math.operator;
+package edu.austral.ingsis.math.composite.operator;
 
-import edu.austral.ingsis.math.Term;
+import edu.austral.ingsis.math.composite.Term;
+import edu.austral.ingsis.math.visitorPattern.visitor.TermVisitor;
 
 import java.util.List;
 import java.util.Map;
 
 public class Module implements Operator{
     private Term term;
-
     public Module(Term term) {
         this.term = term;
     }
@@ -27,4 +27,10 @@ public class Module implements Operator{
     public List<String> listVariables() {
         return  term.listVariables();
     }
+
+    public Term getTerm() {
+        return term;
+    }
+
+
 }
